@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="DemoWCF.Concrete.EmployeeService" CodeBehind="Concrete/EmployeeService.cs" %>

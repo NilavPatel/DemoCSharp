@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    Home Page - My sample application for MVC
+    @if (Session["UserID"] != null)
+    {
+        <h1>Welcome @Session["UserID"].ToString() </h1>
+    }
+</div>
