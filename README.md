@@ -46,3 +46,17 @@ How to install windows services?
     
 Note: if cmd is not running with administrator privillage then, intstallutil will gives an exception.
 `````
+
+## Performance Testing
+`````
+Add sample project for performace testing for EF.
+1. insert 10K records into local database.
+2. retrive 10K records from local database.
+
+statistics are as below:
+
+DB: Microsoft SQL server (Local)
+Asp.Net WebAPI hosted in local IIS
+
+`````
+![Image of PerformanceEF](https://github.com/NilavPatel/DemoCSharp/tree/master/PerformaceTestEF/Images/performanceEF.png)
