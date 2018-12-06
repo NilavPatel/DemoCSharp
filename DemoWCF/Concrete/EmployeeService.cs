@@ -16,7 +16,7 @@ namespace DemoWCF.Concrete
         {
             using (var db = new DemoEntities())
             {
-                var employees = db.Employees.Select(e => new EmployeeDTO
+                var employees = db.Employees.AsNoTracking().Select(e => new EmployeeDTO
                 {
                     Address = e.Address,
                     Department = e.Department.Name,
@@ -37,7 +37,8 @@ namespace DemoWCF.Concrete
         {
             using (var db = new DemoEntities())
             {
-                var employee = db.Employees
+                var employee = db.Employees.AsNoTracking()
+                    .Where(e => e.EmployeeID == id)
                     .Select(e => new EmployeeDTO
                     {
                         Address = e.Address,
