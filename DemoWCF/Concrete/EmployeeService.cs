@@ -39,15 +39,16 @@ namespace DemoWCF.Concrete
             {
                 var employee = db.Employees.AsNoTracking()
                     .Where(e => e.EmployeeID == id)
-                    .Select(e => new EmployeeDTO
-                    {
-                        Address = e.Address,
-                        Department = e.Department.Name,
-                        DepartmentID = e.DepartmentID,
-                        EmployeeID = e.EmployeeID,
-                        Name = e.Name
-                    }).FirstOrDefault();
-                return employee;
+                    .FirstOrDefault();
+
+                return employee == null ? null : new EmployeeDTO
+                {
+                    Address = employee.Address,
+                    Department = employee.Department.Name,
+                    DepartmentID = employee.DepartmentID,
+                    EmployeeID = employee.EmployeeID,
+                    Name = employee.Name
+                };
             }
         }
 
