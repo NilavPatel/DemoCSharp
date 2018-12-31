@@ -60,3 +60,7 @@ Asp.Net WebAPI hosted in local IIS
 
 `````
 ![Image of PerformanceEF](https://github.com/NilavPatel/DemoCSharp/blob/master/PerformaceTestEF/Images/performanceEF.png)
+
+## MVC PartialView sample
+
+How to use partial views in MVC with single big Model class?

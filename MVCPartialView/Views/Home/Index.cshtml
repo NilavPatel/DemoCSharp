@@ -1,0 +1,22 @@
+﻿@model MVCPartialView.Models.Employee
+
+@using (Html.BeginForm("Summary", "Home", FormMethod.Post))
+{
+    <h1>Personal</h1>
+    <div>
+        @Html.Partial("_personal", Model)
+    </div>
+
+    <h1>Address</h1>
+    <div>
+        @Html.Partial("_address", Model)
+    </div>
+
+    <h1>Company</h1>
+    <div>
+        @Html.Partial("_company", Model)
+    </div>
+
+    <hr />
+    <input type="submit" value="summary" />
+}

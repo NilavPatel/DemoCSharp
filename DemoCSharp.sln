@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoMVC", "DemoMVC\DemoMVC.csproj", "{AC0CD582-DD71-4FD6-853A-C457170BC88D}"
 EndProject
@@ -17,6 +17,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoWindowsService", "DemoWindowsService\DemoWindowsService.csproj", "{ED46257A-F356-4021-8F4C-BF9CCC61C507}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerformaceTestEF", "PerformaceTestEF\PerformaceTestEF.csproj", "{0F198FB8-5162-4CBB-9F4E-BE6CE930414E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCPartialView", "MVCPartialView\MVCPartialView.csproj", "{6F358B43-DEB7-432C-88B4-F16E841FDF0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,8 +50,15 @@ Global
 		{0F198FB8-5162-4CBB-9F4E-BE6CE930414E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F198FB8-5162-4CBB-9F4E-BE6CE930414E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F198FB8-5162-4CBB-9F4E-BE6CE930414E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F358B43-DEB7-432C-88B4-F16E841FDF0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F358B43-DEB7-432C-88B4-F16E841FDF0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F358B43-DEB7-432C-88B4-F16E841FDF0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F358B43-DEB7-432C-88B4-F16E841FDF0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B455FD1-83A3-4DA8-B329-D85511C307E6}
 	EndGlobalSection
 EndGlobal

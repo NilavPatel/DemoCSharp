@@ -1,0 +1,21 @@
+﻿@model MVCPartialView.Models.Employee
+<div class="form-horizontal">
+    <div class="form-group">
+        @Html.LabelFor(model => model.Company.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Company.Name)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Company.Address, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Company.Address)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Company.ContactNumber, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Company.ContactNumber)
+        </div>
+    </div>
+</div>
