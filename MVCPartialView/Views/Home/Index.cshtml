@@ -4,17 +4,12 @@
 {
     <h1>Personal</h1>
     <div>
-        @Html.Partial("_personal", Model)
-    </div>
-
-    <h1>Address</h1>
-    <div>
-        @Html.Partial("_address", Model)
-    </div>
-
-    <h1>Company</h1>
-    <div>
-        @Html.Partial("_company", Model)
+        @Html.Partial("_Personal",
+           new ViewDataDictionary()
+           {
+               TemplateInfo = new TemplateInfo()
+               { HtmlFieldPrefix = "Personal" }
+           })
     </div>
 
     <hr />

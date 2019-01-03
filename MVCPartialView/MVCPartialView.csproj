@@ -148,8 +148,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Employee.cs" />
-    <Compile Include="Models\EmployeeAddress.cs" />
-    <Compile Include="Models\EmployeeCompany.cs" />
     <Compile Include="Models\EmployeePersonal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -191,9 +189,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Summary.cshtml" />
-    <Content Include="Views\Home\_Address.cshtml" />
-    <Content Include="Views\Home\_Company.cshtml" />
-    <Content Include="Views\Home\_personal.cshtml" />
+    <Content Include="Views\Home\_Personal.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
